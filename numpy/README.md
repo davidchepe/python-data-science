@@ -59,19 +59,22 @@ np.zeros(4)
 Initialize with 4 zeros along column:
 ```python
 np.zeros((1,4))
-=> array([[ 0.,  0.,  0.,  0.]])
+[Out] array([[ 0.,  0.,  0.,  0.]])
 ```
 
-Initialiez with ones:
+Initialize with ones:
 ```python
 np.ones((1,4))
-=> array([[ 1.,  1.,  1.,  1.]])
+[Out] array([[ 1.,  1.,  1.,  1.]])
 ```
 
-Initialize an empty array:
-> np.empty(4)
-> 
-> array([[ 0.,  0.,  0.,  0.]])
+
+```python
+#Initialize an empty array:
+
+np.empty(4)
+[Out] array([[ 0.,  0.,  0.,  0.]])
+```
 
 Initialize an array with a series:
 > np.arange(10, 40, 10) #arange(min,max,step)
