@@ -36,62 +36,102 @@ numpy.array is not the same as the Standard Python class array.array which only 
 |      arr_1.max()        | returns max of array              |
  
 
-Build a two dimensional array (matrix):
 ```python
-np.array([(1.5,2,3), (4,5,6)])
-```
+# Build a two dimensional array (matrix):
 
-Build a matrix with elements of a specific type:
-```python
+np.array([(1.5,2,3), (4,5,6)])
+
+# Build a matrix with elements of a specific type:
+
 np.array( [ [1,2], [3,4] ], dtype=complex)
 ```
-
 
 Often, the elements of an array are originally unknown, but its size is known. Hence, NumPy offers several functions to create arrays with initial placeholder content. These minimize the necessity of growing arrays, an expensive operation.
 
 The function zeros creates an array full of zeros, the function ones creates an array full of ones, and the function empty creates an array whose initial content is random and depends on the state of the memory. By default, the dtype of the created array is float64.
 
-Initialize with 4 zeros:
 ```python
-np.zeros(4)
-```
+# Initialize with 4 zeros:
 
-Initialize with 4 zeros along column:
-```python
+np.zeros(4)
+
+# Initialize with 4 zeros along column:
+
 np.zeros((1,4))
 [Out] array([[ 0.,  0.,  0.,  0.]])
-```
 
-Initialize with ones:
-```python
+# Initialize with ones:
+
 np.ones((1,4))
 [Out] array([[ 1.,  1.,  1.,  1.]])
-```
 
-
-```python
-#Initialize an empty array:
+# Initialize an empty array:
 
 np.empty(4)
 [Out] array([[ 0.,  0.,  0.,  0.]])
+
+# Initialize an array with a series:
+
+np.arange(10, 40, 10) #arange(min,max,step)
+[Out] array([10, 20, 30])
+
+# Initialize with a more sophisticated series:
+
+np.linspace(10,40,10) #create 10 ticks between 10 and 40
+[Out] array([ 10.,  13.33333333,  16.66666667,  20.,23.33333333,  26.66666667,  30.,33.33333333, 36.66666667,40.])
 ```
-
-Initialize an array with a series:
-> np.arange(10, 40, 10) #arange(min,max,step)
-> 
-> array([10, 20, 30])
-
-Initialize with a more sophisticated series:
-> np.linspace(10,40,10) #create 10 ticks between 10 and 40
-> 
-> array([ 10.,  13.33333333,  16.66666667,  20.,23.33333333,  26.66666667,  30.,33.33333333, 36.66666667,40.])
 
 <a id='numpy-B'></a>
 ### Basic Operations
 
-> a = np.array( [20,30,40,50] )
-> 
-> b = np.arange( 4 )
-> 
-> 
+```python
+a = np.array( [20,30,40,50] )
+b = np.arange( 4 )
+print(b)
+[Out] [0 1 2 3]
+
+# Substract two arrays:
+
+a - b => array([20, 29, 38, 47])
+
+# Raise an array's elements to the power of another array's elements:
+
+a**b => array([     1,     30,   1600, 125000])
+
+# Raise an array's elements to the power of a constant:
+
+b**2 => array([0, 1, 4, 9])
+
+# Add the array to an equation with numpy functions:
+
+10*np.sin(a) => array([ 9.12945251, -9.88031624,  7.4511316 , -2.62374854])
+
+# Verify a condition:
+
+a < 35 => array([ True,  True, False, False], dtype=bool)
+
+# Elementwise product: 		a * b
+# Matrix product: 			a.dot(b)
+# Another matrix product: 	np.dot(a,b)
+
+```
+
+Some operations, such as += and *=, act in place to modify an existing array rather than create a new one.
+
+When operating with arrays of different types, the type of the resulting array corresponds to the more general or precise one (a behavior known as upcasting).
+
+<a id='numpy-C'></a>
+### Universal Functions
+
+<a id='numpy-D'></a>
+### Indexing, Slicing and Iterating
+
+<a id='numpy-E'></a>
+### Shape Manipulation
+
+<a id='numpy-F'></a>
+### Linear Algebra
+
+<a id='numpy-G'></a>
+### Tricks and Tips
 

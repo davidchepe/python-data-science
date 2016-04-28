@@ -19,7 +19,7 @@ Happy Coding!
     2. Maps
     3. Closures
 3. [Numpy](./numpy/README.md)
-    1. [Array Creation, Methods & Printing](#numpy-A)
+    1. [Array Creation, Methods & Printing](./numpy/README.md#numpy-A)
     2. [Basic Operations](#numpy-B)
     3. [Universal Functions](#numpy-C)
     4. [Indexing, Slicing and Iterating](#numpy-D)
@@ -31,9 +31,13 @@ Happy Coding!
 6. [Matplotlib](#matplotlib)
 7. [Seaborn](#seaborn)
 8. [Machine Learning](/machine-learning/README.md)
-    1. Linear Regression
-    2. Logistic Regression
-    3. K-Nearest Neighbors
-    4. Decision Tree
-    5. Random Forest
-    6. Naive Bayes
+    1. Regression Algorithms
+    2. Instance-based Algorithms
+    3. Regularization Algorithms
+    4. Decision Tree Algorithms
+    5. Bayesian Algorithms
+    6. Clustering Algorithms
+    7. Artificial Neural-Network Algorithms
+    8. Dimensionality Reduction Algorithms
+    9. Ensemble Algorithms
+    10. Other Algorithms
