@@ -37,10 +37,14 @@ numpy.array is not the same as the Standard Python class array.array which only 
  
 
 Build a two dimensional array (matrix):
-> np.array([(1.5,2,3), (4,5,6)])
+```python
+np.array([(1.5,2,3), (4,5,6)])
+```
 
 Build a matrix with elements of a specific type:
-> np.array( [ [1,2], [3,4] ], dtype=complex)
+```python
+np.array( [ [1,2], [3,4] ], dtype=complex)
+```
 
 
 Often, the elements of an array are originally unknown, but its size is known. Hence, NumPy offers several functions to create arrays with initial placeholder content. These minimize the necessity of growing arrays, an expensive operation.
@@ -48,28 +52,43 @@ Often, the elements of an array are originally unknown, but its size is known. H
 The function zeros creates an array full of zeros, the function ones creates an array full of ones, and the function empty creates an array whose initial content is random and depends on the state of the memory. By default, the dtype of the created array is float64.
 
 Initialize with 4 zeros:
-> np.zeros(4)
+```python
+np.zeros(4)
+```
 
 Initialize with 4 zeros along column:
-> np.zeros((1,4))
-> array([[ 0.,  0.,  0.,  0.]])
+```python
+np.zeros((1,4))
+=> array([[ 0.,  0.,  0.,  0.]])
+```
 
 Initialiez with ones:
-> np.ones((1,4))
-> array([[ 1.,  1.,  1.,  1.]])
+```python
+np.ones((1,4))
+=> array([[ 1.,  1.,  1.,  1.]])
+```
 
 Initialize an empty array:
 > np.empty(4)
+> 
 > array([[ 0.,  0.,  0.,  0.]])
 
 Initialize an array with a series:
 > np.arange(10, 40, 10) #arange(min,max,step)
+> 
 > array([10, 20, 30])
 
 Initialize with a more sophisticated series:
 > np.linspace(10,40,10) #create 10 ticks between 10 and 40
+> 
 > array([ 10.,  13.33333333,  16.66666667,  20.,23.33333333,  26.66666667,  30.,33.33333333, 36.66666667,40.])
 
 <a id='numpy-B'></a>
 ### Basic Operations
+
+> a = np.array( [20,30,40,50] )
+> 
+> b = np.arange( 4 )
+> 
+> 
 
