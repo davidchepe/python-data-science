@@ -16,12 +16,12 @@ I'm not an Expert Data Scientist, I'm not just pulling this stuff out of my brai
 
 <a id="summary"></a>
 ## Summary
-1. Regression Algorithms
-    1. Ordinary Least Squares Regression(OSLR)
-    2. Linear Regression
-    3. Logistic Regression
+1. [Regression Algorithms](./regression-algorithms/README.md)
+    1. [Ordinary Least Squares (OSL)](./regression-algorithms/ols.md)
+    2. [Linear Regression](./regression-algorithms/linear.md)
+    3. [Logistic Regression](./regression-algorithms/logistic.md)
 2. Instance-based Algorithms
-    1. K-Nearest Neighbors (KNN)
+    1. [K-Nearest Neighbors (KNN)](./instance-based-algorithms/README.md)
 3. Regularization Algorithms
     1. Ridge Regression
     2. Least Absolute Shrinkage and Selection Operator (LASSO)
@@ -29,8 +29,8 @@ I'm not an Expert Data Scientist, I'm not just pulling this stuff out of my brai
     4. Least-Angle Regression (LARS)
 4. Decision Tree Algorithms
     1. Classification and Regression Tree (CART)
-5. Bayesian Algorithms
-    1. Naive Bayes
+5. [Bayesian Algorithms](./bayesian-algorithms/README.md)
+    1. [Naive Bayes](./bayesian-algorithms/naivebayes.md)
     2. Gaussian Naive Bayes
     3. Multinomial Naive Bayes
 6. Clustering Algorithms
@@ -44,8 +44,8 @@ I'm not an Expert Data Scientist, I'm not just pulling this stuff out of my brai
     1. Principal Component Analysis (PCA)
     2. Principal Component Regression (PCR)
     3. Linear Discriminant Analysis (LDA)
-9. Ensemble Algorithms
-    1. Random Forest
+9. [Ensemble Algorithms](./ensemble-algorithms/README.md)
+    1. [Random Forest](./ensemble-algorithms/randomforest.md)
     2. Boosting
     3. Bagging
 10. Other Algorithms
