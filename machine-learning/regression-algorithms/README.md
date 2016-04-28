@@ -21,7 +21,8 @@
 	4. [Cons](logistic.md#cons)
 	5. [Implementation](logistic.md#implementation)
 
+[BACK to Machine Learning Menu](../README.md)
 
-[Back to Machine Learning Menu](../README.md)
+[BACK to Main Menu](../../README.md)
 
-[Back to Main Menu](../../README.md)
+[NEXT OLS](ols.md)

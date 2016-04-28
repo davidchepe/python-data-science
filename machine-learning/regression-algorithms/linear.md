@@ -14,3 +14,9 @@
 
 <a id="implementation"></a>
 ## Implementation
+
+[BACK to OLS](../ols) 
+
+[BACK to Regression Menu](README.md)
+
+[NEXT Logistic Regression]( ../instance-base-algorithms/README.md)

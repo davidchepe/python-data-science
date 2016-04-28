@@ -14,3 +14,9 @@
 
 <a id="implementation"></a>
 ## Implementation
+
+[BACK to Linear Regression](../linear.md) 
+
+[BACK to Regression Menu](README.md)
+
+[NEXT Instance-based algorithms]( ../instance-base-algorithms/README.md)
