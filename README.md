@@ -8,9 +8,8 @@ Clicking on the links in this summary will automatically bring you to any of the
 
 Happy Coding!
 
-<a id='summary'></a>
 ## SUMMARY
-1. [Basic Python](#basic-python)
+1. [Basic Python](./python-basics/README.md)
     1. Strings
     2. Lists
 2. [Advanced Python](#advanced-python)
