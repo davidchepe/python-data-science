@@ -15,7 +15,7 @@
 <a id="implementation"></a>
 ## Implementation
 
-[BACK to OLS](../ols) 
+[BACK to OLS](../ols/README.md) 
 
 [BACK to Regression Menu](README.md)
 
