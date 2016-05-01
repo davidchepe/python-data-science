@@ -1,5 +1,15 @@
 # Regression Algorithms
 
+## Introduction
+
+Regression analysis is a form of predictive modelling technique which investigates the relationship between a dependent (target) and independent variable (s) (predictor). This technique is used for forecasting, time series modelling and finding the causal effect relationship between the variables.
+
+There are benefits to regression analysis:
+
+* It indicates the significant relationships between dependent variable and independent variable.
+* It indicates the strength of impact of multiple independent variables on a dependent variable.
+* It allows us to compare the effects of variables measured on different scales
+
 ## Summary
 
 1. [Ordinary Least Squares (OLS)](ols.md)

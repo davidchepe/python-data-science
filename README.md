@@ -1,4 +1,4 @@
-# Python Libraries
+# Data Science in Python
 
 This repository is made to help junior data scientists (and myself) to the data science hall of fame and data science expertise. 
 
