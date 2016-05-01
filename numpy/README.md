@@ -123,15 +123,118 @@ When operating with arrays of different types, the type of the resulting array c
 <a id='numpy-C'></a>
 ### Universal Functions
 
+```python
+# Within NumPy, these functions operate elementwise on an array, producing an array as output.
+
+B = np.arange(3) => array([0, 1, 2])
+
+np.exp(B) => array([ 1.        ,  2.71828183,  7.3890561 ])
+
+np.sqrt(B) => array([ 0.        ,  1.        ,  1.41421356])
+
+C = np.array([2., -1., 4.])
+np.add(B,C) => array([ 2.,  0.,  6.])
+```
+
 <a id='numpy-D'></a>
 ### Indexing, Slicing and Iterating
+
+```python
+a = np.arange(10)**3
+a => array([  0,   1,   8,  27,  64, 125, 216, 343, 512, 729])
+
+a[2:5] => array([ 8, 27, 64])
+
+for i in a:
+    print(i**(1/3.))
+=> 
+'''
+0.0
+1.0
+2.0
+3.0
+4.0
+5.0
+6.0
+7.0
+8.0
+9.0
+'''
+
+def f(x,y): return 10*x+y
+b = np.fromfunction(f,(5,4),dtype=int)
+print(b)
+print(b[2,3])
+print(b[0:5, 1])
+
+'''
+
+[[ 0  1  2  3]
+ [10 11 12 13]
+ [20 21 22 23]
+ [30 31 32 33]
+ [40 41 42 43]]
+23
+[ 1 11 21 31 41]
+'''
+
+```
 
 <a id='numpy-E'></a>
 ### Shape Manipulation
 
+```python
+a = np.floor(10*np.random.random((3,4)))
+a
+
+a.ravel() # flatten the array
+
+a.shape = (6, 2)
+a.T
+```
+The reshape function returns its argument with a modified shape, whereas the ndarray.resize method modifies the array itself
+
+If a dimension is given as -1 in a reshaping operation, the other dimensions are automatically calculated
+
+```python
+#Stacking arrays
+a = np.floor(10*np.random.random((2,2)))
+print(a)
+b = np.floor(10*np.random.random((2,2)))
+print(b)
+
+np.vstack((a,b)) #vertical stack
+
+np.hstack((a,b)) #horizontal stack
+
+#np.hsplit() = split an array horizontally, according to columns 3 and 4: (3,4) 
+#np.vsplit() = split an array vertically
+```
+
 <a id='numpy-F'></a>
 ### Linear Algebra
+
+```python
+a = np.array([[1.0, 2.0], [3.0, 4.0]])
+print(a)
+
+a.transpose() # a.T works as well
+
+np.linalg.inv(a)
+
+y = np.array([[5.], [7.]])
+print(y)
+np.linalg.solve(a, y)
+```
 
 <a id='numpy-G'></a>
 ### Tricks and Tips
 
+To change the dimensions of an array, you can omit one of the sizes which will then be deduced automatically:
+
+```python
+a = np.arange(30)
+print(a)
+a.shape = 2,-1,3  # -1 means "whatever is needed"
+a.shape
+```
