@@ -1,16 +1,16 @@
 # Machine Learning
 
-Machine Learning in Python is mainly done with Scikit Learn but we will also see how to implement are own machine learning algorithms. 
+Machine Learning in Python is mainly done with Scikit Learn but we will also see how to implement are own machine learning algorithms.
 
-This section is so extensive that it will have its own folders where you should be able to find relevant information and code for each important machine learning algorithm. 
+This section is so extensive that it will have its own folders where you should be able to find relevant information and code for each important machine learning algorithm.
 
-Generally I will try and keep this outline for every algorithm: 
+Generally I will try and keep this outline for every algorithm:
 
 * What is it?
 * How does it work?
 * What are the pros and cons?
 * What are some applications of the algorithm?
-* Implementing the algorithm in Python with Scikit and/or on your own ;) 
+* Implementing the algorithm in Python with Scikit and/or on your own ;)
 
 I'm not an Expert Data Scientist, I'm not just pulling this stuff out of my brain. All the information found here is of course available online. But I'm sure like me you would like to see everything in one place. That's why I'm doing this. My list of sources is available at the [bottom](#sources).
 
@@ -28,7 +28,7 @@ I'm not an Expert Data Scientist, I'm not just pulling this stuff out of my brai
     3. Elastic Net
     4. Least-Angle Regression (LARS)
 4. Decision Tree Algorithms
-    1. Classification and Regression Tree (CART)
+    1. [Classification and Regression Tree (CART)](./decision-tree-algorithms/decision-tree.md)
 5. [Bayesian Algorithms](./bayesian-algorithms/README.md)
     1. [Naive Bayes](./bayesian-algorithms/naivebayes.md)
     2. Gaussian Naive Bayes
@@ -58,5 +58,5 @@ I'm not an Expert Data Scientist, I'm not just pulling this stuff out of my brai
 
 <a id="sources"></a>
 ## Sources
-* <http://machinelearningmastery.com> 
+* <http://machinelearningmastery.com>
 * <http://www.analyticsvidhya.com>
